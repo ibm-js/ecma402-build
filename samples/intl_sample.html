@@ -12,7 +12,9 @@
 					"ecma402/locales": /^(ar-(TN|SA|EG)|en|es|he|hi|ja|th|de|zh-Hant|zh-TW)$/
 				}
 			});
-
+		</script>
+		<script>
+	require(["ecma402-build/layer"], function(){
 			require(["ecma402/Intl"], function(IntlIbm) {
 				formatit = function (locale) {
 					var options = {
@@ -45,7 +47,9 @@
 					}
 				};
 			});
-		</script>
+		
+	});
+	</script>
     </head>
     <body>
         <h1>IBM ECMA-402 Demo</h1>
