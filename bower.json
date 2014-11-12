@@ -1,6 +1,6 @@
 {
   "name": "ecma402-build",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "dependencies": {
     "requirejs": "2.1.x",
     "requirejs-text": "2.0.x",
@@ -14,6 +14,6 @@
     "CONTRIBUTING.md"
   ],
   "devDependencies": {
-    "ecma402": "0.2.4"
+    "ecma402": "0.2.5"
   }
 }
