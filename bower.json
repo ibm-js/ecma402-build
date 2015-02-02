@@ -1,10 +1,10 @@
 {
   "name": "ecma402-build",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "dependencies": {
     "requirejs": "2.1.x",
     "requirejs-text": "2.0.x",
-    "requirejs-dplugins": "0.4.x"
+    "requirejs-dplugins": "0.5.x"
   },
   "ignore": [
     ".jshintrc",
@@ -14,6 +14,6 @@
     "CONTRIBUTING.md"
   ],
   "devDependencies": {
-    "ecma402": "0.2.6"
+    "ecma402": "0.3.0"
   }
 }
