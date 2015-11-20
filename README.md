@@ -24,8 +24,10 @@ Then install dependencies with bower (or manually from github if you prefer to):
 
 ## How to use
 
-To load the minified layer you need to wrap your main `require` call with another `require`, requiring `"ecma402-build/layer"`. Then you should continue to
-refer to modules with `"ecma402/foo"`.
+### `baseUrl` is the directory containing `ecma402-build`.
+This is the most common use-case so the needed configuration is built in the layer.
+To load the minified layer you just need to wrap your main `require` call with another `require`, requiring `"ecma402-build/layer"`.
+Then you should continue to refer to modules with `"ecma402/foo"`.
 
 For example, this code:
 ```js
@@ -41,6 +43,24 @@ require(["ecma402-build/layer"], function() {
 	});
 });
 ```
+
+### Other `baseUrl`
+
+If `baseUrl` is not the directory containing `ecma402-build`, custom configuration is needed.
+
+```js
+require.config({
+	paths: {
+		"ecma402": "path/to/ecma402-build"
+	}
+});
+```
+
+
+## Bug reporting
+
+Issues should be filled against the source version of this project at [ibm-js/ecma402](https://github.com/ibm-js/ecma402)
+
 
 ## Licensing
 
